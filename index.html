@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Atika — Data Analyst</title>
+  <title>Atika — Portfolio Data Analyst</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,7 +11,8 @@
       background-color: #f9f9f9;
     }
 
-    h1, h2 {
+    h1 {
+      text-align: center;
       color: #333;
     }
 
@@ -19,6 +20,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      justify-content: center;
     }
 
     .project-card {
@@ -26,43 +28,101 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      flex: 1 1 calc(50% - 20px); /* deux colonnes */
+      flex: 1 1 calc(50% - 40px); /* deux colonnes avec marge */
+      max-width: 500px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .project-card img {
+      max-width: 100px;
+      margin-bottom: 15px;
     }
 
     .project-card h3 {
-      margin-top: 0;
+      margin: 10px 0 5px 0;
       color: #0073e6;
+    }
+
+    .project-card h4 {
+      margin: 5px 0;
+      font-weight: normal;
+      color: #555;
     }
 
     .project-card p {
       margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .project-card blockquote {
+      font-style: italic;
+      color: #444;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-left: 5px solid #0073e6;
+      margin-bottom: 15px;
+    }
+
+    .project-card a.button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #0073e6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .project-card a.button:hover {
+      background-color: #005bb5;
+    }
+
+    @media (max-width: 800px) {
+      .project-card {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-<h1>Atika — Data Analyst</h1>
-<p>Portfolio de projets statistiques et analytiques</p>
+<h1>Portfolio — Atika Labbass</h1>
+<p style="text-align:center;">Vitrine de mes projets en Data Analysis et Statistiques</p>
 
 <div class="container">
-  <!-- Projet 1 -->
+
+  <!-- Projet MHF -->
   <div class="project-card">
-    <h3>Muslim Hands France</h3>
-    <p><strong>Travail réalisé :</strong> Analyse des dons, segmentation des donateurs, tableau de bord interactif.</p>
-    <p><strong>Résultats :</strong> Cartographies, typologies comportementales et synthèses automatisées.</p>
-    <p><strong>Témoignage :</strong> "Atika nous a fourni un tableau de bord clair et opérationnel, qui facilite nos suivis mensuels." – MHF</p>
+    <img src="logo_mhf.png" alt="Logo Muslim Hands France">
+    <h3>Suivi automatisé des dons - Tableau de bord Power BI</h3>
+    <h4>Association Muslim Hands France | Dates approximatives</h4>
+    <p>Bénévole <strong>Data Analyst</strong> pour Muslim Hands France : traitement des données de dons depuis 2020 et création d’un <strong>tableau de bord Power BI automatisé</strong>, mettant en avant les indicateurs clés pour faciliter la prise de décision.</p>
+    <blockquote>
+      <strong>Témoignage de MHF (6 mois après utilisation du tableau de bord)</strong><br>
+      Le dashboard conçu par Atika nous a permis de comprendre clairement l’évolution de nos donateurs et d’identifier nos indicateurs clés. Son travail a renforcé notre capacité de prise de décision stratégique. Nous sommes très satisfaits de sa compréhension des enjeux, de son adaptabilité et de sa force de proposition tout au long de la collaboration.
+    </blockquote>
+    <a href="mhf_detail.html" class="button">Tableau de bord Power BI →</a>
   </div>
 
-  <!-- Projet 2 -->
+  <!-- Projet exemple 2 -->
   <div class="project-card">
-    <h3>Stage de fin d’études</h3>
-    <p><strong>Travail réalisé :</strong> Analyse des données médico-sociales, indicateurs de santé territoriale.</p>
-    <p><strong>Résultats :</strong> Tableaux synthétiques, recommandations pour les équipes locales.</p>
-    <p><strong>Témoignage :</strong> "Un travail méthodique et précis, qui a réellement aidé nos analyses." – CREAI PACA</p>
+    <img src="logo_stage.png" alt="Logo Stage">
+    <h3>Analyse médico-sociale - Diagnostic territorial</h3>
+    <h4>CREAI PACA | Dates approximatives</h4>
+    <p>Stage de fin d’études : traitement et analyse des données médico-sociales pour produire des indicateurs territoriaux et des tableaux synthétiques.</p>
+    <blockquote>
+      <strong>Témoignage CREAI PACA</strong><br>
+      Un travail méthodique et précis, qui a réellement aidé nos analyses et la prise de décisions locales.
+    </blockquote>
+    <a href="stage_detail.html" class="button">Voir le projet →</a>
   </div>
 
-  <!-- Tu peux ajouter autant de projets que nécessaire -->
+  <!-- Ajoute autant de projets que nécessaire -->
+
 </div>
 
 </body>
