@@ -8,12 +8,19 @@
       font-family: Arial, sans-serif;
       margin: 40px;
       line-height: 1.6;
-      background-color: #f9f9f9;
+      background: linear-gradient(to bottom, #151617, #09273D);
+      color: #ffffff;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #E0E0E0;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #B0C4DE;
+      margin-bottom: 40px;
     }
 
     .container {
@@ -24,11 +31,11 @@
     }
 
     .project-card {
-      background-color: #fff;
+      background-color: #0B1A2C; /* bleu foncé légèrement différent du fond */
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      flex: 1 1 calc(50% - 40px); /* deux colonnes avec marge */
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      flex: 1 1 calc(50% - 40px); /* deux colonnes */
       max-width: 500px;
       box-sizing: border-box;
       display: flex;
@@ -44,33 +51,34 @@
 
     .project-card h3 {
       margin: 10px 0 5px 0;
-      color: #0073e6;
+      color: #4FA3FF; /* bleu clair */
     }
 
     .project-card h4 {
       margin: 5px 0;
       font-weight: normal;
-      color: #555;
+      color: #B0C4DE;
     }
 
     .project-card p {
       margin-bottom: 10px;
       text-align: justify;
+      color: #D0DCE0;
     }
 
     .project-card blockquote {
       font-style: italic;
-      color: #444;
-      background-color: #f1f1f1;
+      color: #E0E0E0;
+      background-color: rgba(255,255,255,0.05);
       padding: 10px;
-      border-left: 5px solid #0073e6;
+      border-left: 5px solid #4FA3FF;
       margin-bottom: 15px;
     }
 
     .project-card a.button {
       display: inline-block;
       padding: 10px 15px;
-      background-color: #0073e6;
+      background-color: #4FA3FF;
       color: #fff;
       text-decoration: none;
       border-radius: 8px;
@@ -78,7 +86,7 @@
     }
 
     .project-card a.button:hover {
-      background-color: #005bb5;
+      background-color: #1A7FFF;
     }
 
     @media (max-width: 800px) {
@@ -91,7 +99,7 @@
 <body>
 
 <h1>Portfolio — Atika Labbass</h1>
-<p style="text-align:center;">Vitrine de mes projets en Data Analysis et Statistiques</p>
+<p class="subtitle">Vitrine de mes projets en Data Analysis et Statistiques</p>
 
 <div class="container">
 
@@ -120,8 +128,6 @@
     </blockquote>
     <a href="stage_detail.html" class="button">Voir le projet →</a>
   </div>
-
-  <!-- Ajoute autant de projets que nécessaire -->
 
 </div>
 
